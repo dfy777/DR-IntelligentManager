@@ -1,0 +1,10 @@
+package com.example.demo.dao;
+
+import org.springframework.data.redis.connection.ReactiveStreamCommands.DeleteCommand;
+
+import com.example.demo.pojo.User;
+
+public interface UserDao {
+	int addUser(User user);
+	void deleteUser(User user);
+}
