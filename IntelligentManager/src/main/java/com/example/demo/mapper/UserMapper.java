@@ -11,7 +11,7 @@ import com.example.demo.pojo.User;
 @Mapper
 public interface UserMapper {
 	
-	@Select("SELECT * FROM user WHERE user_id=#{id}")
+	//@Select("SELECT * FROM user WHERE user_id=#{id}")
 	public User getUserById(Integer id);
 	
 	@Update("UPDATE user SET nickname=#{nickName}, username=#{userName}, "

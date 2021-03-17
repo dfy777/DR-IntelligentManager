@@ -1,0 +1,20 @@
+package com.example.demo.pojo;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Order implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5994604583240811380L;
+	private Integer order_id;
+	private LocalDate createDate;
+	private String nickName;
+	private String describe;
+	
+	
+}
