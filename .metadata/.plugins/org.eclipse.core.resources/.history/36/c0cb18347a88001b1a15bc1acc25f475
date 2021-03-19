@@ -1,0 +1,16 @@
+package com.example.demo.pojo;
+
+import java.io.Serializable;
+
+public class Factory implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1524370873256957827L;
+	
+	private Integer factory_id;
+	private String fac_name;
+	private Integer client_id;
+	private String fac_location;
+}

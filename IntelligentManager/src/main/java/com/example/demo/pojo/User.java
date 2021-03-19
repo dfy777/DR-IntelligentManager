@@ -10,9 +10,10 @@ public class User implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1571787161524096374L;
+	
 	private Integer user_id;
 	private String username;
-	private String nickngame;
+	private String nickname;
 	private String email;
 	private String password;
 	private String telephone;
@@ -32,14 +33,6 @@ public class User implements Serializable {
 	
 	public void setUsername(String username) {
 		this.username = username;
-	}
-	
-	public String getNickngame() {
-		return nickngame;
-	}
-	
-	public void setNickngame(String nickngame) {
-		this.nickngame = nickngame;
 	}
 	
 	public String getEmail() {
@@ -76,8 +69,16 @@ public class User implements Serializable {
 
 	@Override
 	public String toString() {
-		return "User [user_id=" + user_id + ", username=" + username + ", nickngame=" + nickngame + ", email=" + email
+		return "User [user_id=" + user_id + ", username=" + username + ", nickname=" + nickname + ", email=" + email
 				+ ", password=" + password + ", telephone=" + telephone + ", usertype=" + usertype + "]";
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 	
 	

@@ -1,0 +1,15 @@
+package com.example.demo.pojo;
+
+import java.io.Serializable;
+
+public class Product implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4751471923038152939L;
+	
+	private Integer product_id;
+	private Integer prod_num;
+	private String prod_name;
+}

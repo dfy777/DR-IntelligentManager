@@ -1,7 +1,6 @@
 package com.example.demo.pojo;
 
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.LocalDate;
 
 import org.springframework.stereotype.Component;
@@ -15,10 +14,11 @@ public class Order implements Serializable {
 	private Integer order_id;
 	private Integer fac_id;
 	private Integer client_id;
+	private Integer dev_id;
 	private String ord_name;
 	private String description;
-	private Date createtime;
-	private Date finishtime;
+	private LocalDate createtime;
+	private LocalDate finishtime;
 	private Integer status;
 	
 	public Integer getOrder_id() {
@@ -60,21 +60,6 @@ public class Order implements Serializable {
 		this.description = description;
 	}
 	
-	public Date getCreatetime() {
-		return createtime;
-	}
-	
-	public void setCreatetime(Date createtime) {
-		this.createtime = createtime;
-	}
-	
-	public Date getFinishtime() {
-		return finishtime;
-	}
-	
-	public void setFinishtime(Date finishtime) {
-		this.finishtime = finishtime;
-	}
 	
 	public Integer getStatus() {
 		return status;
@@ -84,11 +69,36 @@ public class Order implements Serializable {
 		this.status = status;
 	}
 
+	public Integer getDev_id() {
+		return dev_id;
+	}
+
+	public void setDev_id(Integer dev_id) {
+		this.dev_id = dev_id;
+	}
+
 	@Override
 	public String toString() {
-		return "Order [order_id=" + order_id + ", fac_id=" + fac_id + ", client_id=" + client_id + ", ord_name="
-				+ ord_name + ", description=" + description + ", createtime=" + createtime + ", finishtime="
-				+ finishtime + ", status=" + status + "]";
+		return "Order [order_id=" + order_id + ", fac_id=" + fac_id + ", client_id=" + client_id + ", dev_id=" + dev_id
+				+ ", ord_name=" + ord_name + ", description=" + description + ", createtime=" + createtime
+				+ ", finishtime=" + finishtime + ", status=" + status + "]";
 	}
-	
+
+	public LocalDate getCreatetime() {
+		return createtime;
+	}
+
+	public void setCreatetime(LocalDate createtime) {
+		this.createtime = createtime;
+	}
+
+	public LocalDate getFinishtime() {
+		return finishtime;
+	}
+
+	public void setFinishtime(LocalDate finishtime) {
+		this.finishtime = finishtime;
+	}
+
+
 }
