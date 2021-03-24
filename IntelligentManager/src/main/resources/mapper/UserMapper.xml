@@ -7,9 +7,21 @@
         delete from user where user_id=#{id}
     </delete>
 	
+	
 	<select id="getUserById" parameterType="Integer" resultType="com.example.demo.pojo.User">
 		select * from user where user_id=#{id}
   	</select>
+
+
+	<select id="getUserByName" parameterType="String" resultType="com.example.demo.pojo.User">
+		select * from user where username=#{name}
+	</select>
+	
+	
+	<select id="findPswByName" parameterType="String" resultType="String">
+		select password from user where username=#{name}
+	</select>
+
 
     <update id="updateUser" parameterType="com.example.demo.pojo.User">
         update user set
@@ -21,6 +33,7 @@
         telephone=#{telephone}
         where user_id=#{user_id}
     </update>
+
 
     <insert id="insertUser" parameterType="com.example.demo.pojo.User" 
 			keyProperty="user_id" useGeneratedKeys="true">

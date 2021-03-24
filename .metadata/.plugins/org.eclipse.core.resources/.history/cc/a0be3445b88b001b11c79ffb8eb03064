@@ -1,0 +1,17 @@
+package com.example.demo.service;
+
+import com.example.demo.pojo.User;
+
+public interface UserService {
+	
+	//save user function
+	void saveUser(User user);
+	
+	//delete user function
+	boolean deleteUser(Integer id);
+	boolean deleteUser(User user);
+	
+	//find user
+	User findUser(Integer id);
+	User findUser(String username);
+}

@@ -1,0 +1,29 @@
+package com.example.demo.controller;
+
+import java.util.Map;
+
+import javax.crypto.ExemptionMechanismSpi;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.example.demo.pojo.Result;
+
+
+@Controller
+@RequestMapping("/login")
+public class LoginController {
+	
+	
+	@GetMapping("/user")
+	@ResponseBody
+	public Result<String> checkUserLogin(@RequestBody Map<String,String> user) {
+		String username = user.get("username");
+		String psw = user.get("password");
+		
+		
+	}
+}

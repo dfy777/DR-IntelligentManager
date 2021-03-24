@@ -4154,3 +4154,82 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.mybatis.s
 2021-03-19 14:59:34,174 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-03-19 14:59:34,174 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-03-19 14:59:34,175 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-19 17:23:46,705 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-03-19 22:16:05,664 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-03-20 20:28:55,353 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-23 14:31:32,208 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-23 16:48:41,563 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-23 16:48:41,636 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-23 16:48:41,643 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-23 16:48:41,663 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-23 16:48:43,821 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-23 16:48:43,822 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-23 16:48:43,822 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-23 17:05:55,797 [main] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2021-03-23 17:05:55,813 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-23 17:05:55,814 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-23 17:05:55,825 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-23 17:05:55,870 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-23 17:05:55,909 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-23 17:05:55,909 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-23 17:05:55,909 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-23 19:02:34,462 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-03-24 14:01:58,605 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-03-24 14:20:36,037 [Worker-23: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 14:20:36,040 [Worker-23: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 14:20:36,045 [Worker-23: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 14:20:36,070 [Worker-23: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 14:20:38,599 [Worker-23: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 14:20:38,599 [Worker-23: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 14:20:38,600 [Worker-23: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-24 18:59:50,434 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 18:59:50,435 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 18:59:50,450 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 18:59:50,485 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 18:59:50,529 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 18:59:50,529 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 18:59:50,529 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-24 18:59:55,134 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 18:59:55,134 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 18:59:55,143 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 18:59:55,166 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 18:59:55,204 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 18:59:55,204 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 18:59:55,204 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-24 20:35:45,073 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-24 22:48:55,447 [Worker-58: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 22:48:55,447 [Worker-58: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 22:48:55,454 [Worker-58: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 22:48:55,551 [Worker-58: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 22:48:55,681 [Worker-58: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 22:48:55,681 [Worker-58: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 22:48:55,681 [Worker-58: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-24 22:59:41,222 [Worker-60: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 22:59:41,223 [Worker-60: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 22:59:41,236 [Worker-60: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 22:59:41,262 [Worker-60: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 22:59:41,301 [Worker-60: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 22:59:41,301 [Worker-60: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 22:59:41,301 [Worker-60: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-24 23:01:37,576 [Worker-69: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 23:01:37,577 [Worker-69: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 23:01:37,593 [Worker-69: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 23:01:37,616 [Worker-69: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 23:01:37,656 [Worker-69: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 23:01:37,657 [Worker-69: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 23:01:37,657 [Worker-69: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-24 23:19:16,994 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:IntelligentManager:0.0.1-SNAPSHOT @ C:\Projects\javaweb\IntelligentManager\pom.xml.
+2021-03-24 23:19:18,103 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 23:19:18,103 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 23:19:18,117 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 23:19:18,161 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 23:19:18,210 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 23:19:18,210 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 23:19:18,210 [Worker-77: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources
+2021-03-24 23:29:17,556 [Worker-80: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 23:29:17,556 [Worker-80: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 23:29:17,569 [Worker-80: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-03-24 23:29:17,598 [Worker-80: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 165 resources
+2021-03-24 23:29:17,672 [Worker-80: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-24 23:29:17,672 [Worker-80: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-03-24 23:29:17,673 [Worker-80: Launching IntelligentManager - IntelligentManagerApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Projects\javaweb\IntelligentManager\src\test\resources

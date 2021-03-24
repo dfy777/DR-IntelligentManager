@@ -1,0 +1,13 @@
+package com.example.demo.pojo;
+
+public class ResultUtil {
+	public static Result<Object> successResult(Object object) {
+		
+		Result result = new Result<Object>();
+		success.setCode(ResultEnum.SUCCESS.getCode());
+		success.setMsg(ResultEnum.SUCCESS.getMsg());
+		success.setData(object);
+		
+		return result;
+	}
+}

@@ -1,0 +1,26 @@
+package com.example.demo.pojo;
+
+public class ResultUtil {
+	public static <T> Result<T> successResult(T object) {
+		
+		Result<T> result = new Result<T>();
+		result.setCode(ResultEnum.SUCCESS.getCode());
+		result.setMsg(ResultEnum.SUCCESS.getMsg());
+		result.setData(object);
+		
+		return result;
+	}
+	
+	public static Result<T> successResult() {
+		return successResult(null);
+	}
+	
+	public static Result<Object> unknown_errorReult(Object object) {
+		Result<Object> result = new Result<Object>();
+		result.setCode(ResultEnum.UNKNOWN_ERROR.getCode());
+		result.setMsg(ResultEnum.UNKNOWN_ERROR.getMsg());
+		result.setData(object);
+		
+		return result;
+	}
+}

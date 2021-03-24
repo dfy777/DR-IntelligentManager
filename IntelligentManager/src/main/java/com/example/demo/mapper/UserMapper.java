@@ -10,9 +10,13 @@ public interface UserMapper {
 	
 	public User getUserById(Integer id);
 	
+	public User getUserByName(String name);
+	
 	public void updateUser(User user);
 	
-	public void deleteUserById(Integer id);
+	public int deleteUserById(Integer id);
 	
 	public void insertUser(User user);
+	
+	public String findPswByName(String name);
 }
