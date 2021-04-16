@@ -11,10 +11,14 @@ import com.example.demo.pojo.Result;
 public class MyExceptionHandler {
 	
 	private static final Logger log = LoggerFactory.getLogger(MyExceptionHandler.class);
-
+	
+	public static void takeLog(Exception e) {
+		log.error(e.getMessage());
+	}
 	
 	@ExceptionHandler(DeleteUserException.class)
 	public void deleteUserException(Exception e) {
-		log.error(e.getMessage());
+		//log.error(e.getMessage());
+		takeLog(e);
 	}
 }

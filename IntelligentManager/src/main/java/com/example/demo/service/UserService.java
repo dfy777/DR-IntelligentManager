@@ -1,23 +1,24 @@
 package com.example.demo.service;
 
-import com.example.demo.myexcept.DeleteUserException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import com.example.demo.pojo.Result;
 import com.example.demo.pojo.User;
 
 public interface UserService {
 	
-	//save user function
-	void saveUser(User user);
-	
-	//delete user function
-	boolean deleteUser(Integer id) throws DeleteUserException;
-	boolean deleteUser(User user) throws DeleteUserException;
-	boolean deleteUser(String name) throws DeleteUserException;
-	
-	//find user
-	User findUser(Integer id);
-	User findUser(String username);
-	
 	//check user login
-	Result<String> checkUserLogin(String name, String psw);
+	Result<String> checkUserLogin(String name, String psw, HttpServletRequest request, HttpServletResponse response);
+	
+	//save new user
+	Result<String> saveNewUser(User user, HttpServletRequest request, HttpServletResponse response);
+	
+	//change user info
+	Result<String> changeUserInfo(User new_user);
+	
+	User findUser(String name);
+	
+	User findUser(Integer id);
 }

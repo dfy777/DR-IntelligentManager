@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import com.example.demo.mapper.UserMapper;
@@ -14,8 +15,8 @@ import com.example.demo.pojo.User;
 @SpringBootTest
 class IntelligentManagerApplicationTests {
 
-//	@Autowired
-//	private StringRedisTemplate stringRedisTemplate;
+	@Autowired
+	private RedisTemplate<String, Object> redisTemplate;
 	
 	@Autowired
 	private UserMapper userMapper;
@@ -26,19 +27,20 @@ class IntelligentManagerApplicationTests {
 //		assertEquals("sdasd", stringRedisTemplate.opsForValue().get("111"));
 //	}
 
-	@Test
-	public void test() throws Exception {
+	public void testRedis() throws Exception {
 		 
-		User user = new User();
-		user.setEmail("1223144");
-		user.setNickname("n312");
-		user.setPassword("12412");
-		user.setTelephone("5555");
-		user.setUsername("12");
-		user.setUsertype(312);
-		user.setUser_id(4);
+		//User user = userMapper.getUserById(3);
+		//System.out.print(user);
 		
-		user = userMapper.getUserById(4);
-		System.out.print(user);
+		redisTemplate.opsForValue().set("asdasfasd", "asdafasdf");
+	}
+	
+	@Test
+	public void testRegex() throws Exception {
+		String pattern = "^[a-zA-Z]\\w{5,17}$";
+		
+		String psw = "da1ddfasdasf";
+		
+		System.out.println(java.util.regex.Pattern.matches(pattern, psw));		
 	}
 }

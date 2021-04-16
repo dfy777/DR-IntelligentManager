@@ -23,6 +23,10 @@ public class User implements Serializable {
 		return user_id;
 	}
 	
+	public void setUserId(Integer user_id) {
+		this.user_id = user_id;
+	}
+	
 	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
 	}
@@ -80,6 +84,40 @@ public class User implements Serializable {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
+
+	/**
+	 * if some properties is null, return true
+	 * else retrun false
+	 * @return
+	 */
+	public boolean checkIsNull() {
+		boolean flag = false;
+		if (username==null || nickname==null || email==null || 
+			password==null || usertype==null || user_id==null) {
+			flag = true;
+		}
+		return flag;
+	}
 	
-	
+	public void updateInfo(User new_user) {
+		if (new_user.getNickname() != null) {
+			nickname = new_user.getNickname();
+		}
+		
+		if (new_user.getEmail() != null) {
+			email = new_user.getEmail();
+		}
+		
+		if (new_user.getPassword() != null) {
+			password = new_user.getPassword();
+		}
+		
+		if (new_user.getUsertype() != null) {
+			usertype = new_user.getUsertype();
+		}
+		
+		if (new_user.getTelephone() != null) {
+			telephone = new_user.getTelephone();
+		}
+	}
 }

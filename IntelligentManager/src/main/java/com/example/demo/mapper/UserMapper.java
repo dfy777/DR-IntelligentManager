@@ -12,11 +12,11 @@ public interface UserMapper {
 	
 	public User getUserByName(String name);
 	
-	public void updateUser(User user);
+	public int updateUser(User user);
 	
 	public int deleteUserById(Integer id);
 	
-	public void insertUser(User user);
+	public int insertUser(User user);
 	
 	public String findPswByName(String name);
 }
