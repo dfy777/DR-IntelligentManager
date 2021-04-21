@@ -1,0 +1,5 @@
+package com.example.demo.pojo;
+
+public class PatternUtil {
+	private static String namePattern = "^[\\u4E00-\\u9FA5A-Za-z0-9_]+$";
+}

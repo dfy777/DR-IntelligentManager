@@ -20,8 +20,8 @@ public class WebAppConfig extends WebMvcConfigurerAdapter{
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(getSessionInterceptor())
-				.addPathPatterns("/index/**")
-				.excludePathPatterns("/index/login","/index/sign-up");
+				.addPathPatterns("/home/**")
+				.excludePathPatterns("/home/user/**");
 		super.addInterceptors(registry);
 	}
 }

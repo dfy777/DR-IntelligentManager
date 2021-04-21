@@ -12,6 +12,7 @@ import com.example.demo.mapper.UserMapper;
 import com.example.demo.myexcept.DeleteUserException;
 import com.example.demo.myexcept.MyExceptionHandler;
 import com.example.demo.pojo.CookieUtil;
+import com.example.demo.pojo.PatternUtil;
 import com.example.demo.pojo.Result;
 import com.example.demo.pojo.ResultUtil;
 import com.example.demo.pojo.User;
@@ -93,12 +94,15 @@ public class UserServiceImpl implements UserService {
 	public Result<String> checkUserLogin(String name, String psw, 
 							HttpServletRequest request, HttpServletResponse response) {
 		
+		//检测是否为空值
 		if (StringUtil.isNullOrEmpty(name) || StringUtil.isNullOrEmpty(psw)) {
 			return ResultUtil.null_dataRes("输入用户名或密码为空");
 		}
 		
-		
-		
+		//检测用户名和密码格式是否合法
+		if ( !(PatternUtil.validateName(name) && PatternUtil.validatePassword(psw)) ) {
+			return ResultUtil.data_not_allowedRes("非法字符串");
+		}
 		
 		User user =  userMapper.getUserByName(name);
 		
@@ -128,9 +132,14 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public Result<String> saveNewUser(User user, HttpServletRequest request, HttpServletResponse response) {
 		try {
+			user.setUsertype(5);
 			//check if user properties is null
 			if (user.checkIsNull()) {
 				return ResultUtil.null_dataRes("用户数据为空");
+			}
+			
+			if (!user.validateUserData()) {
+				return ResultUtil.data_not_allowedRes("非法数据");
 			}
 			
 			int insert_row = userMapper.insertUser(user);
@@ -158,10 +167,24 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	
+	
+	
 	@Override
 	public Result<String> changeUserInfo(User new_user) {
 		try {
+			if (new_user.checkIsNull()) {
+				return ResultUtil.null_dataRes("数据不能为空");
+			}
+			
+			if (!new_user.validateUserData()) {
+				return ResultUtil.data_not_allowedRes("非法数据");
+			}
+			
 			User old_user = findUser(new_user.getUsername());
+			if (old_user == null) {
+				return ResultUtil.null_dataRes("找不到用户");
+			}
+			
 			old_user.updateInfo(new_user);
 			
 			int update_row = userMapper.updateUser(old_user);

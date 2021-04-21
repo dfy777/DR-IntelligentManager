@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,15 +19,24 @@ import com.example.demo.service.UserService;
 
 
 @Controller
-@RequestMapping("/index")
+@RequestMapping("/home/user")
 public class LoginController {
 	
 	@Autowired
 	private UserService userService;
 	
+	@GetMapping("/sign-up")
+	public String getSignUpPage() {
+		return "admin-add";
+	}
+	
+	@GetMapping("/sign-in")
+	public String getSignInPage() {
+		return "login";
+	}
 	
 	
-	@PostMapping(value="/login",consumes={"application/json"})
+	@PostMapping(value="/sign-in/login",consumes={"application/json"})
 	@ResponseBody
 	public Result<String> checkUserLogin(@RequestBody Map<String, String> userPara, 
 										HttpServletRequest request, HttpServletResponse response) {
@@ -47,7 +57,8 @@ public class LoginController {
 //		}
 	}
 	
-	@PostMapping(value="/sign-up", consumes={"application/json"}) 
+	
+	@PostMapping(value="/sign-up/logup",consumes={"application/json"}) 
 	@ResponseBody 
 	public Result<String> saveNewUser(@RequestBody User user,
 									HttpServletRequest request, HttpServletResponse response) {

@@ -1,11 +1,12 @@
 package com.example.demo.pojo;
 
 public enum ResultEnum {
-	UNKNOWN_ERROR(-1, "unknow error"),
+	UNKNOWN_ERROR(-20000, "unknow error"),
 	SUCCESS(20000, "success"),
 	CUSTOM_MSG(20001,"customize"),
-	DATA_NOT_FOUND(20005, "data_not_found"),
-	DATA_IS_NULL(20010,"data is null"),
+	DATA_NOT_FOUND(30005, "data_not_found"),
+	DATA_NOT_ALLOWED(30006, "data_not_allowed"),
+	DATA_IS_NULL(30010,"data is null"),
 	;
 	
 	private Integer code;

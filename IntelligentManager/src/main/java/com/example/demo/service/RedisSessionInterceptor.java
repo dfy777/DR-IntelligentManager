@@ -12,8 +12,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 public class RedisSessionInterceptor implements HandlerInterceptor {
 	
 	@Autowired
@@ -27,6 +25,7 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
 		String uri = request.getRequestURI();
 		if (uri.endsWith("js")||uri.endsWith("css")||uri.endsWith("jpg")||
 				uri.endsWith("svg")||uri.endsWith("jpg")||uri.endsWith("png")) {
+			System.out.println(0);
 			return true;
 		}
 		
@@ -36,11 +35,12 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
 		
 		//判断cookie内容
 		if (cookie == null) {
-			response.sendRedirect(request.getContextPath() + "/login");
+			response.sendRedirect(request.getContextPath());
+			System.out.println(1);
 			return false;
 		}
 		
-		//System.out.println(2);
+		System.out.println(2);
 		String cookie_userid = null;
 		
 		for (Cookie item : cookie) {
@@ -50,10 +50,12 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
 			}
 		}
 		
-		//System.out.println(3);
+		System.out.println(3);
 		//如果cookie中没有用户相关信息
 		if (cookie_userid == null) {
-			response.sendRedirect(request.getContextPath() + "/login");
+			response.sendRedirect(request.getContextPath());
+			//response.sendRedirect("localhost:8080/home");
+			System.out.println(4);
 			return false;
 		}
 		
@@ -76,7 +78,7 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
 			}
 		}
 		
-		//System.out.println(4);
+		System.out.println(5);
 		response401(response);
 		return false;
 	}
@@ -87,7 +89,7 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
 		
 		try {
 			
-			response.getWriter().print("error");
+			response.getWriter().print("error--");
 		}
 		catch (IOException e) {
 			e.printStackTrace();

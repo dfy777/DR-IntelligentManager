@@ -2,7 +2,6 @@ package com.example.demo.service;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.example.demo.pojo.Result;
 import com.example.demo.pojo.User;

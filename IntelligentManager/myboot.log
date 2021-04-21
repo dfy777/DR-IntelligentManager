@@ -1,153 +1,808 @@
-2021-04-13 20:53:38.283  INFO 8504 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 8504 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
-2021-04-13 20:53:38.289  INFO 8504 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
-2021-04-13 20:53:39.185  INFO 8504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-04-13 20:53:39.189  INFO 8504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-04-13 20:53:39.218  INFO 8504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-2021-04-13 20:53:40.031  INFO 8504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-13 20:53:40.045  INFO 8504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-13 20:53:40.045  INFO 8504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-13 20:53:40.047  INFO 8504 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
-2021-04-13 20:53:40.047  INFO 8504 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-04-13 20:53:40.047  INFO 8504 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-04-13 20:53:40.062  INFO 8504 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-04-13 20:53:40.164  INFO 8504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-13 20:53:40.165  INFO 8504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1813 ms
-2021-04-13 20:53:41.148  INFO 8504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-13 20:53:41.251  INFO 8504 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-04-13 20:53:41.497  INFO 8504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-13 20:53:41.509  INFO 8504 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 3.732 seconds (JVM running for 4.863)
-2021-04-13 20:53:44.126  INFO 8504 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-13 20:53:44.126  INFO 8504 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-13 20:53:44.127  INFO 8504 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-13 20:53:44.195  INFO 8504 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-13 20:53:44.557  INFO 8504 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-13 20:54:04.170  INFO 8504 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-04-13 20:54:04.204  INFO 8504 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-04-13 20:54:04.322  INFO 8504 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-04-13 20:54:04.330  INFO 8504 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-04-13 21:06:40.598  INFO 7664 --- [main] c.e.d.IntelligentManagerApplicationTests : Starting IntelligentManagerApplicationTests using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 7664 (started by wr568 in C:\Projects\javaweb\IntelligentManager)
-2021-04-13 21:06:40.600  INFO 7664 --- [main] c.e.d.IntelligentManagerApplicationTests : No active profile set, falling back to default profiles: default
-2021-04-13 21:06:41.219  INFO 7664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-04-13 21:06:41.224  INFO 7664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-04-13 21:06:41.255  INFO 7664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2021-04-13 21:06:41.395  WARN 7664 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'deviceMapper' and 'com.example.demo.mapper.DeviceMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 21:06:41.395  WARN 7664 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'factoryMapper' and 'com.example.demo.mapper.FactoryMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 21:06:41.396  WARN 7664 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'orderMapper' and 'com.example.demo.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 21:06:41.396  WARN 7664 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.example.demo.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 21:06:41.396  WARN 7664 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 21:06:41.397  WARN 7664 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.
-2021-04-13 21:06:42.920  INFO 7664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:06:43.042  INFO 7664 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-04-13 21:06:43.428  INFO 7664 --- [main] c.e.d.IntelligentManagerApplicationTests : Started IntelligentManagerApplicationTests in 3.148 seconds (JVM running for 4.437)
-2021-04-13 21:06:44.450  INFO 7664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:07:03.293  INFO 20492 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 20492 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
-2021-04-13 21:07:03.295  INFO 20492 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
-2021-04-13 21:07:03.766  INFO 20492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-04-13 21:07:03.768  INFO 20492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-04-13 21:07:03.787  INFO 20492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2021-04-13 21:07:04.245  INFO 20492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-13 21:07:04.255  INFO 20492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-13 21:07:04.255  INFO 20492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-13 21:07:04.257  INFO 20492 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
-2021-04-13 21:07:04.257  INFO 20492 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-04-13 21:07:04.257  INFO 20492 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-04-13 21:07:04.259  INFO 20492 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-04-13 21:07:04.322  INFO 20492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-13 21:07:04.322  INFO 20492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 990 ms
-2021-04-13 21:07:04.894  INFO 20492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:07:04.961  INFO 20492 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-04-13 21:07:05.130  INFO 20492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-13 21:07:05.138  INFO 20492 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.133 seconds (JVM running for 2.674)
-2021-04-13 21:07:07.680  INFO 20492 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-13 21:07:07.680  INFO 20492 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-13 21:07:07.681  INFO 20492 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-13 21:07:07.746  INFO 20492 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-13 21:07:08.036  INFO 20492 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-13 21:07:13.552  INFO 20492 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-04-13 21:07:13.577  INFO 20492 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:07:13.693  INFO 20492 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-04-13 21:07:13.699  INFO 20492 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-04-13 21:23:39.251  INFO 11192 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 11192 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
-2021-04-13 21:23:39.256  INFO 11192 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
-2021-04-13 21:23:40.082  INFO 11192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-04-13 21:23:40.086  INFO 11192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-04-13 21:23:40.119  INFO 11192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2021-04-13 21:23:41.019  INFO 11192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-13 21:23:41.035  INFO 11192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-13 21:23:41.036  INFO 11192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-13 21:23:41.038  INFO 11192 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
-2021-04-13 21:23:41.038  INFO 11192 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-04-13 21:23:41.038  INFO 11192 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-04-13 21:23:41.042  INFO 11192 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-04-13 21:23:41.174  INFO 11192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-13 21:23:41.174  INFO 11192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1849 ms
-2021-04-13 21:23:42.577  INFO 11192 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:23:42.694  INFO 11192 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-04-13 21:23:42.976  INFO 11192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-13 21:23:42.990  INFO 11192 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 4.241 seconds (JVM running for 5.248)
-2021-04-13 21:23:45.741  INFO 11192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-13 21:23:45.742  INFO 11192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-13 21:23:45.745  INFO 11192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2021-04-13 21:23:47.780  INFO 11192 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-13 21:23:48.305  INFO 11192 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-13 21:24:02.637  INFO 11192 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-04-13 21:24:02.657  INFO 11192 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:24:02.787  INFO 11192 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-04-13 21:24:02.793  INFO 11192 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-04-13 21:25:08.020  INFO 14084 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 14084 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
-2021-04-13 21:25:08.024  INFO 14084 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
-2021-04-13 21:25:08.481  INFO 14084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-04-13 21:25:08.488  INFO 14084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-04-13 21:25:08.505  INFO 14084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2021-04-13 21:25:08.962  INFO 14084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-13 21:25:08.970  INFO 14084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-13 21:25:08.971  INFO 14084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-04-13 21:25:08.972  INFO 14084 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
-2021-04-13 21:25:08.972  INFO 14084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-04-13 21:25:08.972  INFO 14084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-04-13 21:25:08.975  INFO 14084 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
-2021-04-13 21:25:09.040  INFO 14084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-13 21:25:09.040  INFO 14084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 979 ms
-2021-04-13 21:25:09.613  INFO 14084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:25:09.675  INFO 14084 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-04-13 21:25:09.849  INFO 14084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-13 21:25:09.859  INFO 14084 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.123 seconds (JVM running for 2.681)
-2021-04-13 21:25:14.249  INFO 14084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-13 21:25:14.249  INFO 14084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-13 21:25:14.250  INFO 14084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-13 21:25:16.011  INFO 14084 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-13 21:25:16.330  INFO 14084 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-13 21:26:58.024  INFO 14084 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-04-13 21:26:58.049  INFO 14084 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-04-13 21:26:58.167  INFO 14084 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-04-13 21:26:58.173  INFO 14084 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-04-13 22:38:08.266  INFO 16744 --- [main] c.e.d.IntelligentManagerApplicationTests : Starting IntelligentManagerApplicationTests using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 16744 (started by wr568 in C:\Projects\javaweb\IntelligentManager)
-2021-04-13 22:38:08.271  INFO 16744 --- [main] c.e.d.IntelligentManagerApplicationTests : No active profile set, falling back to default profiles: default
-2021-04-13 22:38:10.606  INFO 16744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-04-13 22:38:10.618  INFO 16744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-04-13 22:38:10.709  INFO 16744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
-2021-04-13 22:38:11.218  WARN 16744 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'deviceMapper' and 'com.example.demo.mapper.DeviceMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:11.219  WARN 16744 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'factoryMapper' and 'com.example.demo.mapper.FactoryMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:11.220  WARN 16744 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'orderMapper' and 'com.example.demo.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:11.222  WARN 16744 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.example.demo.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:11.223  WARN 16744 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:11.224  WARN 16744 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.
-2021-04-13 22:38:16.398  INFO 16744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-13 22:38:17.131  INFO 16744 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-04-13 22:38:18.765  INFO 16744 --- [main] c.e.d.IntelligentManagerApplicationTests : Started IntelligentManagerApplicationTests in 10.962 seconds (JVM running for 11.918)
-2021-04-13 22:38:20.501  INFO 16744 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-04-13 22:38:54.332  INFO 1328 --- [main] c.e.d.IntelligentManagerApplicationTests : Starting IntelligentManagerApplicationTests using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 1328 (started by wr568 in C:\Projects\javaweb\IntelligentManager)
-2021-04-13 22:38:54.337  INFO 1328 --- [main] c.e.d.IntelligentManagerApplicationTests : No active profile set, falling back to default profiles: default
-2021-04-13 22:38:56.086  INFO 1328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-04-13 22:38:56.095  INFO 1328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-04-13 22:38:56.175  INFO 1328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
-2021-04-13 22:38:56.535  WARN 1328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'deviceMapper' and 'com.example.demo.mapper.DeviceMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:56.537  WARN 1328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'factoryMapper' and 'com.example.demo.mapper.FactoryMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:56.537  WARN 1328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'orderMapper' and 'com.example.demo.mapper.OrderMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:56.538  WARN 1328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.example.demo.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:56.538  WARN 1328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2021-04-13 22:38:56.539  WARN 1328 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.
-2021-04-13 22:38:59.977  INFO 1328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-13 22:39:00.364  INFO 1328 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2021-04-13 22:39:01.498  INFO 1328 --- [main] c.e.d.IntelligentManagerApplicationTests : Started IntelligentManagerApplicationTests in 7.887 seconds (JVM running for 9.886)
-2021-04-13 22:39:02.621  INFO 1328 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:25:18.382  INFO 4324 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 4324 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:25:18.386  INFO 4324 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:25:19.112  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:25:19.120  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:25:19.144  INFO 4324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:25:19.763  INFO 4324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:25:19.775  INFO 4324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:25:19.775  INFO 4324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:25:19.776  INFO 4324 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:25:19.776  INFO 4324 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:25:19.777  INFO 4324 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:25:19.792  INFO 4324 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:25:19.872  INFO 4324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:25:19.873  INFO 4324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1441 ms
+2021-04-20 14:25:20.719  INFO 4324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:25:20.824  INFO 4324 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 14:25:21.086  INFO 4324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:25:21.098  INFO 4324 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 3.052 seconds (JVM running for 3.806)
+2021-04-20 14:25:35.598  INFO 4324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:25:35.599  INFO 4324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:25:35.601  INFO 4324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-20 14:30:37.059  INFO 4324 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:30:37.090  INFO 4324 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:34:19.365  INFO 16124 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 16124 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:34:19.367  INFO 16124 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:34:19.832  INFO 16124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:34:19.835  INFO 16124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:34:19.854  INFO 16124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:34:20.320  INFO 16124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:34:20.332  INFO 16124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:34:20.332  INFO 16124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:34:20.333  INFO 16124 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:34:20.333  INFO 16124 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:34:20.334  INFO 16124 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:34:20.336  INFO 16124 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:34:20.396  INFO 16124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:34:20.396  INFO 16124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2021-04-20 14:34:20.962  INFO 16124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:34:21.193  INFO 16124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:34:21.203  INFO 16124 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.128 seconds (JVM running for 2.697)
+2021-04-20 14:34:40.621  INFO 16124 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:34:40.622  INFO 16124 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:34:40.624  INFO 16124 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-20 14:34:40.639  WARN 16124 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/js/xadmin.js
+2021-04-20 14:34:40.639  WARN 16124 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/font.css
+2021-04-20 14:34:40.639  WARN 16124 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/xadmin.css
+2021-04-20 14:34:40.639  WARN 16124 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/lib/layui/layui.js
+2021-04-20 14:34:40.720  WARN 16124 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/js/xadmin.js
+2021-04-20 14:35:04.916  WARN 16124 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/xadmin.css
+2021-04-20 14:35:04.916  WARN 16124 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/font.css
+2021-04-20 14:35:31.407  INFO 16124 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:35:31.434  INFO 16124 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:41:22.749  INFO 21420 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 21420 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:41:22.751  INFO 21420 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:41:23.216  INFO 21420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:41:23.219  INFO 21420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:41:23.238  INFO 21420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:41:23.724  INFO 21420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:41:23.734  INFO 21420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:41:23.734  INFO 21420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:41:23.734  INFO 21420 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:41:23.736  INFO 21420 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:41:23.736  INFO 21420 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:41:23.738  INFO 21420 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:41:23.801  INFO 21420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:41:23.801  INFO 21420 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1015 ms
+2021-04-20 14:41:24.379  INFO 21420 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:41:24.445  INFO 21420 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 14:41:24.611  INFO 21420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:41:24.619  INFO 21420 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.158 seconds (JVM running for 2.696)
+2021-04-20 14:41:39.836  INFO 21420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:41:39.837  INFO 21420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:41:39.838  INFO 21420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 14:42:10.392  INFO 21420 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:42:10.416  INFO 21420 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:49:57.533  INFO 23372 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 23372 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:49:57.536  INFO 23372 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:49:58.004  INFO 23372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:49:58.006  INFO 23372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:49:58.026  INFO 23372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:49:58.500  INFO 23372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:49:58.509  INFO 23372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:49:58.509  INFO 23372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:49:58.510  INFO 23372 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:49:58.511  INFO 23372 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:49:58.511  INFO 23372 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:49:58.514  INFO 23372 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:49:58.592  INFO 23372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:49:58.593  INFO 23372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
+2021-04-20 14:49:59.168  INFO 23372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:49:59.402  INFO 23372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:49:59.412  INFO 23372 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.166 seconds (JVM running for 2.73)
+2021-04-20 14:50:11.133  INFO 23372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:50:11.134  INFO 23372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:50:11.134  INFO 23372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 14:50:20.023  INFO 23372 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:50:20.053  INFO 23372 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:50:47.641  INFO 4388 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 4388 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:50:47.644  INFO 4388 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:50:48.132  INFO 4388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:50:48.135  INFO 4388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:50:48.153  INFO 4388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:50:48.611  INFO 4388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:50:48.622  INFO 4388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:50:48.622  INFO 4388 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:50:48.623  INFO 4388 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:50:48.624  INFO 4388 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:50:48.624  INFO 4388 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:50:48.626  INFO 4388 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:50:48.691  INFO 4388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:50:48.692  INFO 4388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
+2021-04-20 14:50:49.258  INFO 4388 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:50:49.516  INFO 4388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:50:49.525  INFO 4388 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.178 seconds (JVM running for 2.75)
+2021-04-20 14:51:22.932  INFO 4388 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:51:22.933  INFO 4388 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:51:22.934  INFO 4388 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 14:51:43.180  INFO 4388 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:51:43.209  INFO 4388 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:52:39.431  INFO 9940 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 9940 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:52:39.433  INFO 9940 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:52:39.910  INFO 9940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:52:39.912  INFO 9940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:52:39.933  INFO 9940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:52:40.400  INFO 9940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:52:40.409  INFO 9940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:52:40.409  INFO 9940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:52:40.410  INFO 9940 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:52:40.410  INFO 9940 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:52:40.411  INFO 9940 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:52:40.413  INFO 9940 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:52:40.479  INFO 9940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:52:40.480  INFO 9940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1011 ms
+2021-04-20 14:52:41.047  INFO 9940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:52:41.280  INFO 9940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:52:41.289  INFO 9940 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.137 seconds (JVM running for 2.717)
+2021-04-20 14:52:44.108  INFO 9940 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:52:44.110  INFO 9940 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:52:44.111  INFO 9940 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 14:53:36.777  INFO 9940 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:53:36.804  INFO 9940 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:55:14.836  INFO 2320 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 2320 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:55:14.838  INFO 2320 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:55:15.306  INFO 2320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:55:15.308  INFO 2320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:55:15.328  INFO 2320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:55:15.779  INFO 2320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:55:15.787  INFO 2320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:55:15.788  INFO 2320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:55:15.789  INFO 2320 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:55:15.790  INFO 2320 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:55:15.790  INFO 2320 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:55:15.792  INFO 2320 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:55:15.853  INFO 2320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:55:15.855  INFO 2320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 974 ms
+2021-04-20 14:55:16.405  INFO 2320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:55:16.627  INFO 2320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:55:16.635  INFO 2320 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.082 seconds (JVM running for 2.632)
+2021-04-20 14:55:22.257  INFO 2320 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:55:22.258  INFO 2320 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:55:22.258  INFO 2320 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 14:57:07.658  INFO 2320 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:57:07.684  INFO 2320 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:57:14.807  INFO 21488 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 21488 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 14:57:14.809  INFO 21488 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 14:57:15.292  INFO 21488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 14:57:15.295  INFO 21488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 14:57:15.316  INFO 21488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-20 14:57:15.805  INFO 21488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 14:57:15.814  INFO 21488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 14:57:15.815  INFO 21488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 14:57:15.816  INFO 21488 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 14:57:15.816  INFO 21488 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 14:57:15.817  INFO 21488 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 14:57:15.819  INFO 21488 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 14:57:15.879  INFO 21488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 14:57:15.879  INFO 21488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
+2021-04-20 14:57:16.454  INFO 21488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 14:57:16.520  INFO 21488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 14:57:16.680  INFO 21488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 14:57:16.688  INFO 21488 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.165 seconds (JVM running for 2.71)
+2021-04-20 14:57:19.858  INFO 21488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 14:57:19.859  INFO 21488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 14:57:19.860  INFO 21488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 14:58:11.273  INFO 21488 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 14:58:11.303  INFO 21488 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:03:19.426  INFO 23028 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 23028 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:03:19.428  INFO 23028 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:03:19.897  INFO 23028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:03:19.900  INFO 23028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:03:19.925  INFO 23028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:03:20.379  INFO 23028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:03:20.390  INFO 23028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:03:20.390  INFO 23028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:03:20.390  INFO 23028 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:03:20.392  INFO 23028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:03:20.392  INFO 23028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:03:20.394  INFO 23028 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:03:20.459  INFO 23028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:03:20.460  INFO 23028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 995 ms
+2021-04-20 15:03:21.015  INFO 23028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:03:21.238  INFO 23028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:03:21.246  INFO 23028 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.105 seconds (JVM running for 2.637)
+2021-04-20 15:03:34.469  INFO 23028 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:03:34.470  INFO 23028 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:03:34.471  INFO 23028 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 15:03:34.484  WARN 23028 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/lib/layui/layui.js
+2021-04-20 15:03:34.484  WARN 23028 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/js/xadmin.js
+2021-04-20 15:03:34.484  WARN 23028 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/xadmin.css
+2021-04-20 15:03:34.484  WARN 23028 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/font.css
+2021-04-20 15:03:37.430  WARN 23028 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/font.css
+2021-04-20 15:03:37.430  WARN 23028 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /home/user/css/xadmin.css
+2021-04-20 15:04:48.431  INFO 23028 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:04:48.462  INFO 23028 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:04:51.722  INFO 484 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 484 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:04:51.725  INFO 484 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:04:52.182  INFO 484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:04:52.185  INFO 484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:04:52.203  INFO 484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:04:52.672  INFO 484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:04:52.681  INFO 484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:04:52.681  INFO 484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:04:52.682  INFO 484 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:04:52.682  INFO 484 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:04:52.682  INFO 484 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:04:52.685  INFO 484 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:04:52.748  INFO 484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:04:52.749  INFO 484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2021-04-20 15:04:53.320  INFO 484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:04:53.560  INFO 484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:04:53.568  INFO 484 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.135 seconds (JVM running for 2.659)
+2021-04-20 15:04:56.717  INFO 484 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:04:56.718  INFO 484 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:04:56.718  INFO 484 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 15:05:15.622  INFO 484 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:05:15.648  INFO 484 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:06:32.276  INFO 22600 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 22600 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:06:32.277  INFO 22600 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:06:32.749  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:06:32.752  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:06:32.771  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:06:33.254  INFO 22600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:06:33.263  INFO 22600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:06:33.264  INFO 22600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:06:33.265  INFO 22600 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:06:33.265  INFO 22600 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:06:33.265  INFO 22600 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:06:33.268  INFO 22600 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:06:33.334  INFO 22600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:06:33.334  INFO 22600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1017 ms
+2021-04-20 15:06:33.906  INFO 22600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:06:33.987  INFO 22600 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 15:06:34.147  INFO 22600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:06:34.157  INFO 22600 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.162 seconds (JVM running for 2.697)
+2021-04-20 15:06:41.059  INFO 22600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:06:41.060  INFO 22600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:06:41.061  INFO 22600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 15:07:12.916  INFO 22600 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:07:12.942  INFO 22600 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:08:18.768  INFO 22164 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 22164 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:08:18.770  INFO 22164 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:08:19.231  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:08:19.232  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:08:19.252  INFO 22164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:08:19.735  INFO 22164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:08:19.745  INFO 22164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:08:19.745  INFO 22164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:08:19.746  INFO 22164 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:08:19.746  INFO 22164 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:08:19.746  INFO 22164 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:08:19.749  INFO 22164 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:08:19.809  INFO 22164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:08:19.809  INFO 22164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+2021-04-20 15:08:20.355  INFO 22164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:08:20.421  INFO 22164 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 15:08:20.581  INFO 22164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:08:20.591  INFO 22164 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.099 seconds (JVM running for 2.633)
+2021-04-20 15:08:23.825  INFO 22164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:08:23.827  INFO 22164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:08:23.828  INFO 22164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 15:09:51.506  INFO 22164 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:09:51.532  INFO 22164 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:10:39.635  INFO 9988 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 9988 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:10:39.638  INFO 9988 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:10:40.126  INFO 9988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:10:40.128  INFO 9988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:10:40.146  INFO 9988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:10:40.615  INFO 9988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:10:40.624  INFO 9988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:10:40.624  INFO 9988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:10:40.625  INFO 9988 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:10:40.625  INFO 9988 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:10:40.625  INFO 9988 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:10:40.628  INFO 9988 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:10:40.689  INFO 9988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:10:40.690  INFO 9988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1012 ms
+2021-04-20 15:10:41.264  INFO 9988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:10:41.328  INFO 9988 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 15:10:41.492  INFO 9988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:10:41.501  INFO 9988 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.169 seconds (JVM running for 2.712)
+2021-04-20 15:10:43.426  INFO 9988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:10:43.427  INFO 9988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:10:43.428  INFO 9988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 15:12:44.784  INFO 9988 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:12:44.811  INFO 9988 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:13:02.788  INFO 14556 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 14556 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:13:02.790  INFO 14556 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:13:03.257  INFO 14556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:13:03.259  INFO 14556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:13:03.278  INFO 14556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:13:03.746  INFO 14556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:13:03.756  INFO 14556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:13:03.756  INFO 14556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:13:03.758  INFO 14556 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:13:03.758  INFO 14556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:13:03.759  INFO 14556 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:13:03.762  INFO 14556 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:13:03.830  INFO 14556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:13:03.830  INFO 14556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1000 ms
+2021-04-20 15:13:04.427  INFO 14556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:13:04.492  INFO 14556 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 15:13:04.664  INFO 14556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:13:04.674  INFO 14556 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.17 seconds (JVM running for 2.708)
+2021-04-20 15:13:06.929  INFO 14556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:13:06.931  INFO 14556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:13:06.932  INFO 14556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 15:13:46.040  INFO 14556 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:13:46.070  INFO 14556 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:13:52.264  INFO 21136 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 21136 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:13:52.265  INFO 21136 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:13:52.742  INFO 21136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:13:52.750  INFO 21136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:13:52.768  INFO 21136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:13:53.217  INFO 21136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:13:53.227  INFO 21136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:13:53.227  INFO 21136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:13:53.229  INFO 21136 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:13:53.229  INFO 21136 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:13:53.229  INFO 21136 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:13:53.232  INFO 21136 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:13:53.293  INFO 21136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:13:53.294  INFO 21136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 986 ms
+2021-04-20 15:13:53.858  INFO 21136 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:13:54.091  INFO 21136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:13:54.099  INFO 21136 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.125 seconds (JVM running for 2.654)
+2021-04-20 15:13:56.223  INFO 21136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:13:56.224  INFO 21136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:13:56.225  INFO 21136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 15:13:56.253  WARN 21136 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin-add.html
+2021-04-20 15:14:06.316  INFO 21136 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:14:06.337  INFO 21136 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:14:09.917  INFO 21868 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 21868 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:14:09.918  INFO 21868 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:14:10.384  INFO 21868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:14:10.386  INFO 21868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:14:10.404  INFO 21868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:14:10.873  INFO 21868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:14:10.883  INFO 21868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:14:10.883  INFO 21868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:14:10.884  INFO 21868 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:14:10.884  INFO 21868 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:14:10.884  INFO 21868 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:14:10.887  INFO 21868 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:14:10.949  INFO 21868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:14:10.949  INFO 21868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 995 ms
+2021-04-20 15:14:11.528  INFO 21868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:14:11.756  INFO 21868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:14:11.765  INFO 21868 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.138 seconds (JVM running for 2.686)
+2021-04-20 15:14:15.373  INFO 21868 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:14:15.374  INFO 21868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:14:15.374  INFO 21868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 15:14:15.404  WARN 21868 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin-add.html
+2021-04-20 15:14:17.888  WARN 21868 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin-add.html
+2021-04-20 15:14:42.183  INFO 21868 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:14:42.207  INFO 21868 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:55:24.179  INFO 17628 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 17628 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:55:24.181  INFO 17628 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:55:24.653  INFO 17628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:55:24.655  INFO 17628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:55:24.676  INFO 17628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:55:25.142  INFO 17628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:55:25.153  INFO 17628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:55:25.153  INFO 17628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:55:25.154  INFO 17628 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:55:25.154  INFO 17628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:55:25.154  INFO 17628 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:55:25.157  INFO 17628 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:55:25.217  INFO 17628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:55:25.217  INFO 17628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
+2021-04-20 15:55:25.774  INFO 17628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:55:26.003  INFO 17628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:55:26.012  INFO 17628 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.112 seconds (JVM running for 2.646)
+2021-04-20 15:55:30.902  INFO 17628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:55:30.903  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:55:30.904  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 15:55:30.934  WARN 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin-add.html
+2021-04-20 15:55:31.980  WARN 17628 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin-add.html
+2021-04-20 15:55:35.133  INFO 17628 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:55:35.158  INFO 17628 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:55:42.570  INFO 3604 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 3604 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:55:42.572  INFO 3604 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:55:43.048  INFO 3604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:55:43.051  INFO 3604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:55:43.073  INFO 3604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:55:43.535  INFO 3604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:55:43.544  INFO 3604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:55:43.545  INFO 3604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:55:43.546  INFO 3604 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:55:43.546  INFO 3604 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:55:43.546  INFO 3604 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:55:43.548  INFO 3604 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:55:43.614  INFO 3604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:55:43.614  INFO 3604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+2021-04-20 15:55:44.200  INFO 3604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:55:44.270  INFO 3604 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 15:55:44.446  INFO 3604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 15:55:44.456  INFO 3604 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.197 seconds (JVM running for 2.765)
+2021-04-20 15:55:49.235  INFO 3604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 15:55:49.236  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 15:55:49.237  INFO 3604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 15:57:13.835  INFO 3604 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 15:57:13.860  INFO 3604 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 15:59:58.791  INFO 16252 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 16252 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 15:59:58.793  INFO 16252 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 15:59:59.247  INFO 16252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 15:59:59.249  INFO 16252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 15:59:59.268  INFO 16252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 15:59:59.744  INFO 16252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 15:59:59.754  INFO 16252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 15:59:59.754  INFO 16252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 15:59:59.755  INFO 16252 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 15:59:59.755  INFO 16252 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 15:59:59.756  INFO 16252 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 15:59:59.758  INFO 16252 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 15:59:59.819  INFO 16252 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 15:59:59.820  INFO 16252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 994 ms
+2021-04-20 16:00:00.377  INFO 16252 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:00:00.444  INFO 16252 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:00:00.603  INFO 16252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:00:00.616  INFO 16252 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.114 seconds (JVM running for 2.663)
+2021-04-20 16:00:03.841  INFO 16252 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:00:03.843  INFO 16252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:00:03.844  INFO 16252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 16:00:16.286  INFO 16252 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:00:16.315  INFO 16252 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:00:29.829  INFO 12424 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 12424 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:00:29.832  INFO 12424 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:00:30.333  INFO 12424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:00:30.335  INFO 12424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:00:30.361  INFO 12424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:00:30.828  INFO 12424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:00:30.837  INFO 12424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:00:30.838  INFO 12424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:00:30.840  INFO 12424 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:00:30.841  INFO 12424 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:00:30.841  INFO 12424 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:00:30.843  INFO 12424 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:00:30.915  INFO 12424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:00:30.915  INFO 12424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
+2021-04-20 16:00:31.500  INFO 12424 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:00:31.567  INFO 12424 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:00:31.735  INFO 12424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:00:31.744  INFO 12424 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.203 seconds (JVM running for 2.768)
+2021-04-20 16:00:37.653  INFO 12424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:00:37.654  INFO 12424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:00:37.655  INFO 12424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 16:00:53.596  INFO 12424 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:00:53.621  INFO 12424 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:01:24.715  INFO 9028 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 9028 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:01:24.716  INFO 9028 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:01:25.171  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:01:25.178  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:01:25.197  INFO 9028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:01:25.643  INFO 9028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:01:25.651  INFO 9028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:01:25.652  INFO 9028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:01:25.653  INFO 9028 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:01:25.653  INFO 9028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:01:25.653  INFO 9028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:01:25.655  INFO 9028 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:01:25.721  INFO 9028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:01:25.722  INFO 9028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 971 ms
+2021-04-20 16:01:26.278  INFO 9028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:01:26.340  INFO 9028 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:01:26.504  INFO 9028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:01:26.513  INFO 9028 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.078 seconds (JVM running for 2.594)
+2021-04-20 16:01:29.907  INFO 9028 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:01:29.908  INFO 9028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:01:29.909  INFO 9028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 16:04:40.652  INFO 9028 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:04:40.680  INFO 9028 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:05:10.299  INFO 2132 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 2132 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:05:10.301  INFO 2132 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:05:10.788  INFO 2132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:05:10.795  INFO 2132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:05:10.816  INFO 2132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:05:11.338  INFO 2132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:05:11.348  INFO 2132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:05:11.349  INFO 2132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:05:11.350  INFO 2132 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:05:11.351  INFO 2132 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:05:11.352  INFO 2132 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:05:11.354  INFO 2132 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:05:11.425  INFO 2132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:05:11.425  INFO 2132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1086 ms
+2021-04-20 16:05:12.030  INFO 2132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:05:12.101  INFO 2132 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:05:12.266  INFO 2132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:05:12.274  INFO 2132 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.268 seconds (JVM running for 2.811)
+2021-04-20 16:05:21.628  INFO 2132 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:05:21.630  INFO 2132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:05:21.631  INFO 2132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 16:05:34.758  INFO 2132 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:05:34.779  INFO 2132 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:05:44.015  INFO 5300 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 5300 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:05:44.018  INFO 5300 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:05:44.480  INFO 5300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:05:44.482  INFO 5300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:05:44.502  INFO 5300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:05:44.958  INFO 5300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:05:44.967  INFO 5300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:05:44.967  INFO 5300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:05:44.968  INFO 5300 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:05:44.968  INFO 5300 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:05:44.969  INFO 5300 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:05:44.971  INFO 5300 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:05:45.035  INFO 5300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:05:45.035  INFO 5300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 981 ms
+2021-04-20 16:05:45.593  INFO 5300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:05:45.657  INFO 5300 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:05:45.825  INFO 5300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:05:45.834  INFO 5300 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.103 seconds (JVM running for 2.629)
+2021-04-20 16:05:55.071  INFO 5300 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:05:55.072  INFO 5300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:05:55.073  INFO 5300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 16:07:18.307  INFO 5300 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:07:18.334  INFO 5300 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:30:39.177  INFO 16792 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 16792 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:30:39.179  INFO 16792 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:30:39.711  INFO 16792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:30:39.713  INFO 16792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:30:39.733  INFO 16792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:30:40.267  INFO 16792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:30:40.280  INFO 16792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:30:40.281  INFO 16792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:30:40.283  INFO 16792 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:30:40.283  INFO 16792 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:30:40.284  INFO 16792 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:30:40.286  INFO 16792 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:30:40.376  INFO 16792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:30:40.376  INFO 16792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1158 ms
+2021-04-20 16:30:40.988  INFO 16792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:30:41.055  INFO 16792 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:30:41.240  INFO 16792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:30:41.252  INFO 16792 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.361 seconds (JVM running for 2.931)
+2021-04-20 16:31:03.372  INFO 16792 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:31:03.374  INFO 16792 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:31:03.374  INFO 16792 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 16:31:13.376  INFO 16792 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:31:13.401  INFO 16792 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:34:51.773  INFO 1476 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 1476 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:34:51.776  INFO 1476 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:34:52.254  INFO 1476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:34:52.256  INFO 1476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:34:52.277  INFO 1476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:34:52.741  INFO 1476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:34:52.750  INFO 1476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:34:52.750  INFO 1476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:34:52.751  INFO 1476 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:34:52.752  INFO 1476 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:34:52.752  INFO 1476 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:34:52.754  INFO 1476 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:34:52.838  INFO 1476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:34:52.838  INFO 1476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1024 ms
+2021-04-20 16:34:53.404  INFO 1476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:34:53.465  INFO 1476 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:34:53.630  INFO 1476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:34:53.639  INFO 1476 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.159 seconds (JVM running for 2.721)
+2021-04-20 16:34:56.412  INFO 1476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:34:56.412  INFO 1476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:34:56.413  INFO 1476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 16:36:16.040  INFO 1476 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:36:16.065  INFO 1476 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:36:19.581  INFO 5184 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 5184 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:36:19.583  INFO 5184 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:36:20.043  INFO 5184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:36:20.045  INFO 5184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:36:20.069  INFO 5184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:36:20.532  INFO 5184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:36:20.542  INFO 5184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:36:20.542  INFO 5184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:36:20.543  INFO 5184 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:36:20.543  INFO 5184 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:36:20.543  INFO 5184 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:36:20.546  INFO 5184 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:36:20.611  INFO 5184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:36:20.611  INFO 5184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2021-04-20 16:36:21.177  INFO 5184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:36:21.238  INFO 5184 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:36:21.397  INFO 5184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:36:21.408  INFO 5184 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.119 seconds (JVM running for 2.659)
+2021-04-20 16:36:26.122  INFO 5184 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:36:26.123  INFO 5184 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:36:26.124  INFO 5184 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 16:38:14.132  INFO 5184 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:38:14.158  INFO 5184 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:39:08.545  INFO 20196 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 20196 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:39:08.548  INFO 20196 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:39:09.027  INFO 20196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:39:09.029  INFO 20196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:39:09.049  INFO 20196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:39:09.511  INFO 20196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:39:09.520  INFO 20196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:39:09.521  INFO 20196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:39:09.522  INFO 20196 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:39:09.522  INFO 20196 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:39:09.522  INFO 20196 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:39:09.525  INFO 20196 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:39:09.596  INFO 20196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:39:09.596  INFO 20196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
+2021-04-20 16:39:10.184  INFO 20196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:39:10.245  INFO 20196 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:39:10.416  INFO 20196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:39:10.425  INFO 20196 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.159 seconds (JVM running for 2.69)
+2021-04-20 16:39:13.540  INFO 20196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:39:13.541  INFO 20196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:39:13.542  INFO 20196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 16:43:48.688  INFO 20196 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:43:48.713  INFO 20196 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:44:02.213  INFO 18800 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 18800 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 16:44:02.215  INFO 18800 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 16:44:02.690  INFO 18800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 16:44:02.692  INFO 18800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 16:44:02.710  INFO 18800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 16:44:03.171  INFO 18800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 16:44:03.180  INFO 18800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 16:44:03.180  INFO 18800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 16:44:03.182  INFO 18800 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 16:44:03.182  INFO 18800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 16:44:03.182  INFO 18800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 16:44:03.184  INFO 18800 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 16:44:03.248  INFO 18800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 16:44:03.249  INFO 18800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2021-04-20 16:44:03.799  INFO 18800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:44:03.861  INFO 18800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 16:44:04.035  INFO 18800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 16:44:04.044  INFO 18800 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.115 seconds (JVM running for 2.655)
+2021-04-20 16:44:07.317  INFO 18800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 16:44:07.318  INFO 18800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 16:44:07.320  INFO 18800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-20 16:44:23.410  INFO 18800 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 16:44:23.748  INFO 18800 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 16:44:35.137  INFO 18800 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 16:44:35.158  INFO 18800 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 16:44:35.285  INFO 18800 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-20 16:44:35.292  INFO 18800 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-20 22:18:38.018  INFO 18712 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 18712 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 22:18:38.022  INFO 18712 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 22:18:38.571  INFO 18712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 22:18:38.574  INFO 18712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 22:18:38.598  INFO 18712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-20 22:18:39.216  INFO 18712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:18:39.230  INFO 18712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:18:39.231  INFO 18712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 22:18:39.232  INFO 18712 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 22:18:39.232  INFO 18712 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 22:18:39.233  INFO 18712 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 22:18:39.250  INFO 18712 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 22:18:39.328  INFO 18712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:18:39.329  INFO 18712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1271 ms
+2021-04-20 22:18:40.063  INFO 18712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:18:40.146  INFO 18712 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 22:18:40.355  INFO 18712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:18:40.364  INFO 18712 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.635 seconds (JVM running for 3.332)
+2021-04-20 22:18:48.934  INFO 18712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:18:48.935  INFO 18712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:18:48.936  INFO 18712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 22:19:00.523  INFO 18712 --- [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/home/user/home/user/sign-in/login?{%22username%22:%221%22,%22password%22:%221%22}]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-04-20 22:19:52.551  INFO 18712 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 22:19:52.582  INFO 18712 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:20:57.205  INFO 23308 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 23308 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 22:20:57.207  INFO 23308 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 22:20:57.669  INFO 23308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 22:20:57.671  INFO 23308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 22:20:57.689  INFO 23308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-04-20 22:20:58.167  INFO 23308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:20:58.177  INFO 23308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:20:58.178  INFO 23308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 22:20:58.179  INFO 23308 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 22:20:58.180  INFO 23308 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 22:20:58.180  INFO 23308 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 22:20:58.183  INFO 23308 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 22:20:58.245  INFO 23308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:20:58.245  INFO 23308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
+2021-04-20 22:20:58.831  INFO 23308 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:20:58.901  INFO 23308 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 22:20:59.068  INFO 23308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:20:59.077  INFO 23308 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.166 seconds (JVM running for 2.708)
+2021-04-20 22:21:05.963  INFO 23308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:21:05.963  INFO 23308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:21:05.965  INFO 23308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 22:21:34.306  INFO 23308 --- [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/home/user/home/user/sign-in/login?%22{\%22username\%22:\%221\%22,\%22password\%22:\%221\%22}%22]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-04-20 22:22:37.051  INFO 23308 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 22:22:37.077  INFO 23308 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:22:42.941  INFO 5428 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 5428 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 22:22:42.943  INFO 5428 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 22:22:43.398  INFO 5428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 22:22:43.401  INFO 5428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 22:22:43.420  INFO 5428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 22:22:43.868  INFO 5428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:22:43.878  INFO 5428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:22:43.878  INFO 5428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 22:22:43.879  INFO 5428 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 22:22:43.879  INFO 5428 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 22:22:43.879  INFO 5428 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 22:22:43.881  INFO 5428 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 22:22:43.947  INFO 5428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:22:43.947  INFO 5428 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2021-04-20 22:22:44.521  INFO 5428 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:22:44.586  INFO 5428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 22:22:44.755  INFO 5428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:22:44.765  INFO 5428 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.109 seconds (JVM running for 2.668)
+2021-04-20 22:22:48.412  INFO 5428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:22:48.413  INFO 5428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:22:48.414  INFO 5428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 22:22:57.760  INFO 5428 --- [http-nio-8080-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/home/user/sign-in/login?{%22username%22:%221%22,%22password%22:%221%22}]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-04-20 22:23:19.117  INFO 5428 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 22:23:19.146  INFO 5428 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:29:00.362  INFO 18480 --- [main] c.e.demo.IntelligentManagerApplication   : Starting IntelligentManagerApplication using Java 14.0.2 on DESKTOP-CIV0KT9 with PID 18480 (C:\Projects\javaweb\IntelligentManager\target\classes started by wr568 in C:\Projects\javaweb\IntelligentManager)
+2021-04-20 22:29:00.364  INFO 18480 --- [main] c.e.demo.IntelligentManagerApplication   : No active profile set, falling back to default profiles: default
+2021-04-20 22:29:00.859  INFO 18480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-20 22:29:00.861  INFO 18480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-20 22:29:00.879  INFO 18480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-20 22:29:01.364  INFO 18480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:29:01.377  INFO 18480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:29:01.377  INFO 18480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-20 22:29:01.379  INFO 18480 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-20 22:29:01.380  INFO 18480 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-20 22:29:01.380  INFO 18480 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-20 22:29:01.382  INFO 18480 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-20 22:29:01.446  INFO 18480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:29:01.446  INFO 18480 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1045 ms
+2021-04-20 22:29:02.019  INFO 18480 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:29:02.091  INFO 18480 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-04-20 22:29:02.255  INFO 18480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:29:02.264  INFO 18480 --- [main] c.e.demo.IntelligentManagerApplication   : Started IntelligentManagerApplication in 2.194 seconds (JVM running for 2.741)
+2021-04-20 22:29:11.721  INFO 18480 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:29:11.723  INFO 18480 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:29:11.724  INFO 18480 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 22:29:14.354  INFO 18480 --- [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/home/user/sign-in/login?%22{\%22username\%22:\%221\%22,\%22password\%22:\%221\%22}%22]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-04-20 22:29:42.283  INFO 18480 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-20 22:29:42.311  INFO 18480 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

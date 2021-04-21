@@ -55,4 +55,13 @@ public class ResultUtil {
 		
 		return result;
 	}
+	
+	public static <T> Result<T> data_not_allowedRes(T object) {
+		Result<T> result = new Result<T>();
+		result.setCode(ResultEnum.DATA_NOT_ALLOWED.getCode());
+		result.setMsg(ResultEnum.DATA_NOT_ALLOWED.getMsg());
+		result.setData(object);
+		
+		return result;
+	}
 }

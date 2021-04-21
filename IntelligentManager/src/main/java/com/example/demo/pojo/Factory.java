@@ -52,4 +52,11 @@ public class Factory implements Serializable {
 				+ ", fac_location=" + fac_location + "]";
 	}
 	
+	public boolean validateFac_name() {
+		return PatternUtil.validateName(this.fac_name);
+	}
+	
+	public boolean validateFac_name(String name) {
+		return PatternUtil.validateName(name);
+	}
 }
