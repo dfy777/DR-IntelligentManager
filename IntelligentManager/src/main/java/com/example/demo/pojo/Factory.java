@@ -22,11 +22,19 @@ public class Factory implements Serializable {
 		this.factory_id = factory_id;
 	}
 	
+	public void setFactoryId(Integer factory_id) {
+		this.factory_id = factory_id;
+	}
+	
 	public String getFac_name() {
 		return fac_name;
 	}
 	
 	public void setFac_name(String fac_name) {
+		this.fac_name = fac_name;
+	}
+	
+	public void setFacName(String fac_name) {
 		this.fac_name = fac_name;
 	}
 	
@@ -38,11 +46,19 @@ public class Factory implements Serializable {
 		this.client_id = client_id;
 	}
 	
+	public void setClientId(Integer client_id) {
+		this.client_id = client_id;
+	}
+	
 	public String getFac_location() {
 		return fac_location;
 	}
 	
 	public void setFac_location(String fac_location) {
+		this.fac_location = fac_location;
+	}
+	
+	public void setFacLocation(String fac_location) {
 		this.fac_location = fac_location;
 	}
 	

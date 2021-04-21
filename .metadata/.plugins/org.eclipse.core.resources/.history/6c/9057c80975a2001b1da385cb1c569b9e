@@ -1,0 +1,15 @@
+package com.example.demo.pojo;
+
+public enum DefaultNameEnum {
+	COOKIE_USER_ID("cookie_userid");
+	
+	private String value;
+	
+	DefaultNameEnum(String name) {
+		this.value = name;
+	}
+	
+	public String getValue() {
+		return this.value;
+	}
+}

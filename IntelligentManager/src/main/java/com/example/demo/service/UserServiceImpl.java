@@ -12,6 +12,7 @@ import com.example.demo.mapper.UserMapper;
 import com.example.demo.myexcept.DeleteUserException;
 import com.example.demo.myexcept.MyExceptionHandler;
 import com.example.demo.pojo.CookieUtil;
+import com.example.demo.pojo.DValueEnum;
 import com.example.demo.pojo.PatternUtil;
 import com.example.demo.pojo.Result;
 import com.example.demo.pojo.ResultUtil;
@@ -75,13 +76,13 @@ public class UserServiceImpl implements UserService {
 	 * find User
 	 */
 	
-	
+	@Override
 	public User findUser(Integer id) {
 		return userMapper.getUserById(id);
 	}
 	
 	
-	
+	@Override
 	public User findUser(String name) {
 		return userMapper.getUserByName(name);
 	}
@@ -112,13 +113,15 @@ public class UserServiceImpl implements UserService {
 			
 			//设置session
 			HttpSession session = request.getSession();	
-			session.setAttribute("LoginUserId", user.getUser_id());
+			session.setAttribute(DValueEnum.LOGIN_USER_ID.getValue(), user.getUser_id());
 			
 			//设置cookie,值为用户id
-			CookieUtil.addCookie(response, "cookie_userid", user.getUser_id().toString(), 24 * 60 * 60);
+			CookieUtil.addCookie(response, DValueEnum.COOKIE_USER_ID.getValue(), 
+									user.getUser_id().toString(), 24 * 60 * 60);
 			
 			//存储session
-			redisTemplate.opsForValue().set("LoginUser:" + user.getUser_id(), session.getId());
+			redisTemplate.opsForValue().set(DValueEnum.LOGIN_USER.getValue() + user.getUser_id(), 
+												session.getId());
 			
 			return ResultUtil.successRes("登陆成功");
 		} else {
@@ -147,13 +150,15 @@ public class UserServiceImpl implements UserService {
 				
 				//设置session
 				HttpSession session = request.getSession();	
-				session.setAttribute("LoginUserId", user.getUser_id());
+				session.setAttribute(DValueEnum.LOGIN_USER_ID.getValue(), user.getUser_id());
 				
 				//设置cookie,值为用户id
-				CookieUtil.addCookie(response, "cookie_userid", user.getUser_id().toString(), 24 * 60 * 60);
+				CookieUtil.addCookie(response, DValueEnum.COOKIE_USER_ID.getValue(), 
+										user.getUser_id().toString(), 24 * 60 * 60);
 				
 				//存储session
-				redisTemplate.opsForValue().set("LoginUser:" + user.getUser_id(), session.getId());
+				redisTemplate.opsForValue().set(DValueEnum.LOGIN_USER.getValue() + user.getUser_id(), 
+													session.getId());
 				
 				return ResultUtil.successRes("登陆成功");
 			} else {

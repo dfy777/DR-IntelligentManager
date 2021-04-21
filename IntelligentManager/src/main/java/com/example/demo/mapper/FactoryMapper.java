@@ -1,16 +1,21 @@
 package com.example.demo.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import com.example.demo.pojo.Factory;
 
 @Mapper
 public interface FactoryMapper {
-	public Factory getFactoryById(Integer id);
+	Factory getFactoryById(Integer id);
 	
-	public void updateFactory(Factory factory);
+	void updateFactory(Factory factory);
 	
-	public void deleteFactoryById(Integer id);
+	void deleteFactoryById(Integer id);
 	
-	public void insertFactory(Factory factory);
+	void insertFactory(Factory factory);
+	
+	List<Factory> selectFactoryPage(Integer user_id);
+	
 }

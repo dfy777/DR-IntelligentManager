@@ -1,0 +1,27 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.example.demo.pojo.Factory;
+import com.example.demo.pojo.PageRequest;
+import com.example.demo.service.FactoryService;
+
+
+@Controller
+public class FactoryController {
+	
+	@Autowired
+	FactoryService factoryService;
+	
+	@GetMapping("/home/factory/select_all")
+	@ResponseBody
+	public List<Factory> getAllFactory(@RequestBody PageRequest pageRequest) {
+		return 
+	}
+}

@@ -9,6 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import com.example.demo.mapper.UserMapper;
+import com.example.demo.pojo.PatternUtil;
 import com.example.demo.pojo.User;
 
 @MapperScan("com.example.demo.mapper")
@@ -37,10 +38,9 @@ class IntelligentManagerApplicationTests {
 	
 	@Test
 	public void testRegex() throws Exception {
-		String pattern = "^[a-zA-Z]\\w{5,17}$";
 		
-		String psw = "da1ddfasdasf";
 		
-		System.out.println(java.util.regex.Pattern.matches(pattern, psw));		
+		System.out.println(PatternUtil.validateName("user123"));
+		System.out.println(PatternUtil.validatePassword("qwe123"));
 	}
 }

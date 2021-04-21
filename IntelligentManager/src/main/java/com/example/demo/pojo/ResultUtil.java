@@ -64,4 +64,13 @@ public class ResultUtil {
 		
 		return result;
 	}
+	
+	public static <T> Result<T> invalid_data(T object) {
+		Result<T> result = new Result<T>();
+		result.setCode(ResultEnum.INVALID_DATA.getCode());
+		result.setMsg(ResultEnum.INVALID_DATA.getMsg());
+		result.setData(object);
+		
+		return result;
+	}
 }

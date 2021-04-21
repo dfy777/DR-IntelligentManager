@@ -1,0 +1,19 @@
+package com.example.demo.mapper;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.example.demo.pojo.Factory;
+import com.sun.tools.javac.util.List;
+
+@Mapper
+public interface FactoryMapper {
+	Factory getFactoryById(Integer id);
+	
+	void updateFactory(Factory factory);
+	
+	void deleteFactoryById(Integer id);
+	
+	void insertFactory(Factory factory);
+	
+	List<Factory> selectFactoryPage();
+}

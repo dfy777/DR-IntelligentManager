@@ -7,6 +7,7 @@ public enum ResultEnum {
 	DATA_NOT_FOUND(30005, "data_not_found"),
 	DATA_NOT_ALLOWED(30006, "data_not_allowed"),
 	DATA_IS_NULL(30010,"data is null"),
+	INVALID_DATA(30009,"invalid_data")
 	;
 	
 	private Integer code;
