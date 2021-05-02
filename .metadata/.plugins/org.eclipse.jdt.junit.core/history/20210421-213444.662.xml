@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="IntelligentManagerApplicationTests" project="IntelligentManager" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.example.demo.IntelligentManagerApplicationTests" time="0.465" displayname="IntelligentManagerApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.IntelligentManagerApplicationTests]">
-    <testcase name="testRegex" classname="com.example.demo.IntelligentManagerApplicationTests" time="0.465" displayname="testRegex()" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.IntelligentManagerApplicationTests]/[method:testRegex()]"/>
-  </testsuite>
-</testrun>

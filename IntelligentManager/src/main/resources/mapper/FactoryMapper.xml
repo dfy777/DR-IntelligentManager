@@ -17,15 +17,17 @@
         update factory set
         fac_name=#{fac_name},
         client_id=#{client_id},
+		username=#{username},
+		phone=#{phone},
         fac_location=#{fac_location}
         where factory_id=#{factory_id}
     </update>
 
 
     <insert id="insertFactory" parameterType="com.example.demo.pojo.Factory" 
-			keyProperty="user_id" useGeneratedKeys="true">
-        insert into factory(fac_name, client_id, fac_location)
-        values(#{fac_name},#{client_id},#{fac_location})
+			keyProperty="factory_id" useGeneratedKeys="true">
+        insert into factory(fac_name, client_id, fac_location,username,phone)
+        values(#{fac_name},#{client_id},#{fac_location},#{username},#{phone})
     </insert>
 	
 	

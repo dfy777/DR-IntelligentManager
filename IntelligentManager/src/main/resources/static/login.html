@@ -12,6 +12,7 @@
 	  <link rel="stylesheet" href="/css/xadmin.css">
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/xadmin.js"></script>
     <!--[if lt IE 9]>
       <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
       <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
@@ -24,11 +25,19 @@
         <div id="darkbannerwrap"></div>
         
         <form method="post" class="layui-form" >
-            <input name="username" placeholder="用户名"  type="text" lay-verify="required" class="layui-input" >
+            <input id="username" name="username" placeholder="用户名"  type="text" lay-verify="required" class="layui-input" >
             <hr class="hr15">
-            <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
+            <input id="password" name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
             <hr class="hr15">
-            <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
+            <div>
+                <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
+                <br />
+                <br />
+                <button class="layui-btn" type="button" style="width:100%;" onclick="xadmin.open('注册','/admin-add.html',600,450)">
+                    <i class="layui-icon"></i>注册
+                </button>
+                
+            </div>
             <hr class="hr20" >
         </form>
     </div>
@@ -36,43 +45,42 @@
     <script>
         $(function  () {
             layui.use('form', function(){
-              var form = layui.form;
-              // layer.msg('玩命卖萌中', function(){
-              //   //关闭后的操作
-              //   });
-              //监听提交
-              form.on('submit(login)', function(data){
-                // alert(888)
-                var user = JSON.stringify(data.field)
-                layer.msg(user,function(){
+                var form = layui.form;
+                form.on('submit(login)', function(data){
+                    var username = document.getElementById('username').value
+                    var password = document.getElementById('password').value
+                    var user = {"username":username,"password":password}
                     
+                    $.ajax({
+                        type:'get',
+                        url:'/home/user/sign-in/login',
+                        data:user,
+                        headers: {
+                            'Content-Type': 'application/json;charset=UTF-8'
+                        },
+                        success: function (res) {
+                            var successData = JSON.stringify(res)
+                            //successData = eval("(" + successData + ")")
+                            //alert("message " + successData);
+                            //关闭当前frame
+							if (top.layui.index) {
+					            top.layui.index.openTabsPage('/index.html', null);
+					        } else {
+					            window.open('/index.html');
+					        }
+                            window.close();
+                        },
+                        error: function (res) {
+                            alert("error:通信错误");
+                        }
+                    })
+                    
+                    return false;
                 });
-                
-                $.ajax({
-                	TYPE:'POST',
-                	url:'/home/user/sign-in/login',
-                	data:JSON.stringify(user),
-                	dataType:'json',
-                	headers: {
-                        'Content-Type': 'application/json;charset=UTF-8'
-                    },
-                    success: function (res) {
-                        var successData = JSON.stringify(res)
-                        //successData = eval("(" + successData + ")")
-                        alert("message " + successData);
-                        //关闭当前frame
-                        xadmin.close();
-                        // 可以对父窗口进行刷新 
-                        xadmin.father_reload();
-                    },
-                    error: function (res) {
-                        alert("error:通信错误");
-                    }
+
+                form.on('submit(logup)', function(data){
+                    alert(1);
                 })
-               
-                
-                return false;
-              });
             });
         })
     </script>

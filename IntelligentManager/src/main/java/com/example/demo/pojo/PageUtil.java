@@ -11,6 +11,8 @@ public class PageUtil {
      */
     public static PageResult getPageResult(PageRequest pageRequest, PageInfo<?> pageInfo) {
         PageResult pageResult = new PageResult();
+        pageResult.setStatus(0);
+        pageResult.setMessage("成功");
         pageResult.setPageNum(pageInfo.getPageNum());
         pageResult.setPageSize(pageInfo.getPageSize());
         pageResult.setTotalSize((int)pageInfo.getTotal());

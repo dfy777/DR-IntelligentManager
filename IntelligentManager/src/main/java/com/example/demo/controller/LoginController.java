@@ -25,10 +25,12 @@ public class LoginController {
 	@Autowired
 	private UserService userService;
 	
+	
 	@GetMapping("/sign-up")
 	public String getSignUpPage() {
 		return "admin-add";
 	}
+	
 	
 	@GetMapping("/sign-in")
 	public String getSignInPage() {
@@ -36,25 +38,17 @@ public class LoginController {
 	}
 	
 	
-	@PostMapping(value="/sign-in/login",consumes={"application/json"})
+	@GetMapping(value="/sign-in/login",consumes={"application/json"})
 	@ResponseBody
-	public Result<String> checkUserLogin(@RequestBody Map<String, String> userPara, 
-										HttpServletRequest request, HttpServletResponse response) {
-		String username = userPara.get("username");
-		String psw = userPara.get("password");
+	public Result<String> checkUserLogin(HttpServletRequest request, HttpServletResponse response) {
+		//String username = userPara.get("username");
+		//String psw = userPara.get("password");
+		
+		String username = request.getParameter("username");
+		String psw = request.getParameter("password");
+		
 		
 		return  userService.checkUserLogin(username, psw, request, response);
-		
-//		if (result.getCode() == ResultEnum.SUCCESS.getCode()) {
-//			HttpSession session = request.getSession();
-//			User user = userService.findUser(username);
-//			
-//			
-//			session.setAttribute("LoginUserId", user.getUser_id());
-//			
-//			
-//			redisTemplate.opsForValue().set("LoginUser:" + user.getUser_id(), session.getId());
-//		}
 	}
 	
 	

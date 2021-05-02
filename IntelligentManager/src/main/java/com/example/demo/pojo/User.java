@@ -23,17 +23,21 @@ public class User implements Serializable {
 		return user_id;
 	}
 	
+	
 	public void setUserId(Integer user_id) {
 		this.user_id = user_id;
 	}
+	
 	
 	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
 	}
 	
+	
 	public String getUsername() {
 		return username;
 	}
+	
 	
 	public void setUsername(String username) {
 		this.username = username;
@@ -43,9 +47,11 @@ public class User implements Serializable {
 		return email;
 	}
 	
+	
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 	
 	public String getPassword() {
 		return password;
@@ -54,6 +60,7 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 	
 	public String getTelephone() {
 		return telephone;
@@ -67,23 +74,28 @@ public class User implements Serializable {
 		return usertype;
 	}
 	
+	
 	public void setUsertype(Integer usertype) {
 		this.usertype = usertype;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "User [user_id=" + user_id + ", username=" + username + ", nickname=" + nickname + ", email=" + email
 				+ ", password=" + password + ", telephone=" + telephone + ", usertype=" + usertype + "]";
 	}
 
+	
 	public String getNickname() {
 		return nickname;
 	}
+	
 
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
+	
 
 	/**
 	 * if some properties is null, return true

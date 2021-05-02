@@ -8,7 +8,9 @@ package com.example.demo.pojo;
 public enum DValueEnum {
 	COOKIE_USER_ID("cookie_userid"),
 	LOGIN_USER_ID("LoginUserId"),
-	LOGIN_USER("LoginUser");
+	LOGIN_USER("LoginUser"),
+	CHECKED_FACTORY_ID("CheckedFactoryId"),
+	CHECKED_DEVICE_ID("CheckedDeviceId");
 	
 	private String value;
 	

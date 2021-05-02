@@ -92,7 +92,7 @@ public class RedisSessionInterceptor implements HandlerInterceptor {
 		
 		try {
 			
-			response.getWriter().print("error--");
+			response.getWriter().print("错误页面");
 		}
 		catch (IOException e) {
 			e.printStackTrace();

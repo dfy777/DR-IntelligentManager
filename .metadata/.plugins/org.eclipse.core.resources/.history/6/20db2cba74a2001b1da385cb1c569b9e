@@ -1,6 +1,0 @@
-package com.example.demo.pojo;
-
-public enum DefaultNameEnum {
-	COOKIE_USER_ID("cookie_userid");
-	
-}

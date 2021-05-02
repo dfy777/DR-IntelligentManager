@@ -4,13 +4,19 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.example.demo.pojo.Product;
 
+import io.lettuce.core.dynamic.annotation.Param;
+
 @Mapper
 public interface ProductMapper {
-	public Product getProductById(Integer id);
+	Product getProductById(Integer id);
 	
-	public void deleteProductById(Integer id);
+	void deleteProductById(Integer id);
 	
-	public void updateProduct(Product product);
+	void updateProduct(Product product);
 	
-	public void insertProduct(Product product);
+	void insertProduct(Product product);
+	
+	void mergeProdAndFac(@Param("pid")int pid, @Param("fid")int fid);
+	
+	void mergeProdAndDev(@Param("pid")int pid, @Param("did")int did);
 }

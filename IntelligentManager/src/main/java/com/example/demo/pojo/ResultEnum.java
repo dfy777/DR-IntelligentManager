@@ -1,7 +1,7 @@
 package com.example.demo.pojo;
 
 public enum ResultEnum {
-	UNKNOWN_ERROR(-20000, "unknow error"),
+	UNKNOWN_ERROR(10000, "unknow error"),
 	SUCCESS(20000, "success"),
 	CUSTOM_MSG(20001,"customize"),
 	DATA_NOT_FOUND(30005, "data_not_found"),

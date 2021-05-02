@@ -3,6 +3,17 @@ package com.example.demo.pojo;
 import java.util.List;
 
 public class PageResult {
+	
+	/**
+	 * 状态码
+	 */
+	private int status;
+	
+	/**
+	 * 信息
+	 */
+	private String message;
+	
 	/**
      * 当前页码
      */
@@ -77,4 +88,24 @@ public class PageResult {
     public void setContent(List<?> content) {
         this.content = content;
     }
+
+
+	public int getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+
+	public String getMessage() {
+		return message;
+	}
+
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
 }

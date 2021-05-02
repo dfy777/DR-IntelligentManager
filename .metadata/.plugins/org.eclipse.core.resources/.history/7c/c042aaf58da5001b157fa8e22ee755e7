@@ -1,0 +1,163 @@
+package com.example.demo.pojo;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Order implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5994604583240811380L;
+	private Integer order_id;
+	private Integer fac_id;
+	private Integer client_id;
+	private Integer prodplan_id;
+	private Integer dev_id;
+	private String ord_name;
+	private String description;
+	private String client_info;
+	private String pay_status;
+	private String status;
+	private Integer price;
+	
+	public Integer getOrder_id() {
+		return order_id;
+	}
+	
+	
+	public void setOrder_id(Integer order_id) {
+		this.order_id = order_id;
+	}
+	
+	public void setOrderId(Integer order_id) {
+		this.order_id = order_id;
+	}
+	
+	public Integer getFac_id() {
+		return fac_id;
+	}
+	
+	
+	public void setFac_id(Integer fac_id) {
+		this.fac_id = fac_id;
+	}
+	
+	
+	public void setFacId(Integer fac_id) {
+		this.fac_id = fac_id;
+	}
+	
+	
+	public Integer getClient_id() {
+		return client_id;
+	}
+	
+	
+	public void setClient_id(Integer client_id) {
+		this.client_id = client_id;
+	}
+	
+	
+	public void setClientId(Integer client_id) {
+		this.client_id = client_id;
+	}
+	
+	
+	public Integer getProdplan_id() {
+		return prodplan_id;
+	}
+	
+	
+	public void setProdplan_id(Integer prodplan_id) {
+		this.prodplan_id = prodplan_id;
+	}
+	
+	
+	public void setProdplanId(Integer prodplan_id) {
+		this.prodplan_id = prodplan_id;
+	}
+	
+	
+	public Integer getDev_id() {
+		return dev_id;
+	}
+	
+	
+	public void setDev_id(Integer dev_id) {
+		this.dev_id = dev_id;
+	}
+	
+	
+	public void setDevId(Integer dev_id) {
+		this.dev_id = dev_id;
+	}
+	
+	
+	public String getOrd_name() {
+		return ord_name;
+	}
+	
+	
+	public void setOrd_name(String ord_name) {
+		this.ord_name = ord_name;
+	}
+	
+	
+	public void setOrdName(String ord_name) {
+		this.ord_name = ord_name;
+	}
+	
+	
+	public String getDescription() {
+		return description;
+	}
+	
+	
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+	public String getClient_info() {
+		return client_info;
+	}
+	
+	
+	public void setClient_info(String client_info) {
+		this.client_info = client_info;
+	}
+	
+	
+	public String getPay_status() {
+		return pay_status;
+	}
+	
+	
+	public void setPay_status(String pay_status) {
+		this.pay_status = pay_status;
+	}
+	
+	
+	public String getStatus() {
+		return status;
+	}
+	
+	
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	
+	public Integer getPrice() {
+		return price;
+	}
+	
+	
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+	
+}
